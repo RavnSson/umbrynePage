@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full bg-[#0A0B0C] text-[#C5C8C6]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umbryne — Studio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración de paleta CodexSyn en Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidiana: "#0A0B0C",
+            grafito: "#1C1E22",
+            ceniza: "#C5C8C6",
+            hierro: "#3A3D42",
+            fosforo: "#00FF66",
+            sangreal: "#D92626",
+            acero: "#5A6A7A",
+            violeta: "#5E2B97",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="h-full flex flex-col">
+
+  <!-- NAVBAR -->
+  <header class="w-full border-b border-hierro bg-grafito/20 backdrop-blur">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-semibold tracking-widest text-fosforo">UMBRYNE</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="#about" class="hover:text-fosforo transition">Sobre mí</a>
+        <a href="projects.html" class="hover:text-fosforo transition">Proyectos</a>
+        <a href="#contact" class="hover:text-fosforo transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="flex flex-col items-center text-center py-32 px-4">
+    <h2 class="text-4xl font-light tracking-tight text-ceniza">
+      <span class="text-fosforo">Umbryne</span> Studio
+    </h2>
+    <p class="mt-4 max-w-xl text-acero">
+      Desarrollo, diseño y tecnología bajo una estética oscura, minimalista y funcional.
+    </p>
+    <a href="#projects"
+       class="mt-8 inline-block border border-fosforo text-fosforo px-6 py-2 rounded-lg hover:bg-fosforo hover:text-obsidiana transition">
+      Ver proyectos
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 bg-grafito/30 border-t border-b border-hierro">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl mb-6 text-fosforo">Quién soy</h3>
+      <p class="text-ceniza leading-relaxed">
+        Soy desarrollador y diseñador digital, combinando ingeniería informática con estética gótica y tecnológica.
+        Umbryne nace como un espacio donde convergen funcionalidad, diseño y experimentación.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24">
+    <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-2xl mb-12 text-fosforo">Proyectos</h3>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- CARD 1 -->
+        <div class="bg-grafito/40 border border-hierro p-6 rounded-xl hover:border-fosforo transition">
+          <h4 class="text-lg text-ceniza">App de Eventos</h4>
+          <p class="text-acero text-sm mt-2">Plataforma móvil para descubrir panoramas, tiendas y creadores locales.</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-grafito/40 border border-hierro p-6 rounded-xl hover:border-fosforo transition">
+          <h4 class="text-lg text-ceniza">Umbryne Web</h4>
+          <p class="text-acero text-sm mt-2">Sitio oficial del estudio, basado en diseño minimalista y dark-tech.</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-grafito/40 border border-hierro p-6 rounded-xl hover:border-fosforo transition">
+          <h4 class="text-lg text-ceniza">CodexSyn Tools</h4>
+          <p class="text-acero text-sm mt-2">Scripts, configuraciones y herramientas para entornos Linux rizados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 bg-grafito/20 border-t border-hierro">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-2xl mb-6 text-fosforo">Contacto</h3>
+      <p class="text-ceniza mb-8">¿Quieres colaborar o ver más proyectos? Escríbeme.</p>
+      <a href="mailto:contacto@umbryne.cl"
+         class="inline-block border border-fosforo px-6 py-2 rounded-lg text-fosforo hover:bg-fosforo hover:text-obsidiana transition">
+        Enviar correo
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-acero text-sm border-t border-hierro">
+    © Umbryne Studio — 2025
+  </footer>
+
+</body>
+</html>

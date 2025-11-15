@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full bg-[#0A0B0C] text-[#C5C8C6]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos — Umbryne</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración de paleta CodexSyn en Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidiana: "#0A0B0C",
+            grafito: "#1C1E22",
+            ceniza: "#C5C8C6",
+            hierro: "#3A3D42",
+            fosforo: "#00FF66",
+            sangreal: "#D92626",
+            acero: "#5A6A7A",
+            violeta: "#5E2B97",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-full bg-obsidiana text-ceniza">
+
+  <!-- NAVBAR -->
+  <header class="w-full border-b border-hierro bg-grafito/20 backdrop-blur">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-semibold tracking-widest text-fosforo">
+        UMBRYNE
+      </a>
+      <nav class="space-x-6 text-sm">
+        <a href="index.html#about" class="hover:text-fosforo transition">Sobre mí</a>
+        <a href="projects.html" class="text-fosforo">Proyectos</a>
+        <a href="index.html#contact" class="hover:text-fosforo transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HEADER DE PÁGINA -->
+  <section class="border-b border-hierro bg-grafito/30">
+    <div class="max-w-5xl mx-auto px-6 py-12">
+      <h1 class="text-3xl font-light text-ceniza">Proyectos</h1>
+      <p class="mt-3 text-acero text-sm max-w-2xl">
+        Selección de proyectos desarrollados bajo el estudio Umbryne:
+        aplicaciones, herramientas y experimentos digitales.
+      </p>
+    </div>
+  </section>
+
+  <!-- LISTA DE PROYECTOS -->
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+
+    <!-- Filtro simple (visual, sin lógica JS por ahora) -->
+    <div class="flex flex-wrap gap-3 text-xs">
+      <span class="uppercase tracking-wide text-acero">Categorías:</span>
+      <button class="px-3 py-1 rounded-full border border-hierro text-acero hover:border-fosforo hover:text-fosforo transition">
+        Todos
+      </button>
+      <button class="px-3 py-1 rounded-full border border-hierro text-acero hover:border-fosforo hover:text-fosforo transition">
+        Apps móviles
+      </button>
+      <button class="px-3 py-1 rounded-full border border-hierro text-acero hover:border-fosforo hover:text-fosforo transition">
+        Web
+      </button>
+      <button class="px-3 py-1 rounded-full border border-hierro text-acero hover:border-fosforo hover:text-fosforo transition">
+        Herramientas
+      </button>
+      <button class="px-3 py-1 rounded-full border border-hierro text-acero hover:border-fosforo hover:text-fosforo transition">
+        Experimentos
+      </button>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- PROYECTO 1 -->
+      <article class="bg-grafito/40 border border-hierro rounded-xl p-5 flex flex-col justify-between hover:border-fosforo/80 transition">
+        <header>
+          <h2 class="text-lg text-ceniza">App de Eventos</h2>
+          <p class="mt-2 text-acero text-sm">
+            Plataforma móvil para descubrir eventos, tiendas y creadores locales, con enfoque en escena alternativa.
+          </p>
+        </header>
+        <div class="mt-4 space-y-3">
+          <div class="flex flex-wrap gap-2 text-[11px]">
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">Dart / Flutter</span>
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">Firebase (Auth / Analytics)</span>
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">PostgreSQL (futuro backend)</span>
+          </div>
+          <div class="flex gap-3 text-xs text-fosforo">
+            <a href="#" class="hover:underline">Ver más</a>
+            <a href="#" class="hover:underline">Repositorio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 2 -->
+      <article class="bg-grafito/40 border border-hierro rounded-xl p-5 flex flex-col justify-between hover:border-fosforo/80 transition">
+        <header>
+          <h2 class="text-lg text-ceniza">Umbryne Web</h2>
+          <p class="mt-2 text-acero text-sm">
+            Sitio oficial del estudio Umbryne, con estética dark-tech minimalista y foco en presentación de proyectos.
+          </p>
+        </header>
+        <div class="mt-4 space-y-3">
+          <div class="flex flex-wrap gap-2 text-[11px]">
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">HTML</span>
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">Tailwind CSS</span>
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">Nginx / Docker</span>
+          </div>
+          <div class="flex gap-3 text-xs text-fosforo">
+            <a href="#" class="hover:underline">Demo</a>
+            <a href="#" class="hover:underline">Repositorio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 3 -->
+      <article class="bg-grafito/40 border border-hierro rounded-xl p-5 flex flex-col justify-between hover:border-fosforo/80 transition">
+        <header>
+          <h2 class="text-lg text-ceniza">CodexSyn / Linux Tools</h2>
+          <p class="mt-2 text-acero text-sm">
+            Scripts, configuraciones y rices para entornos Linux, con enfoque en estética wired, goth y retro-tech.
+          </p>
+        </header>
+        <div class="mt-4 space-y-3">
+          <div class="flex flex-wrap gap-2 text-[11px]">
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">Bash / Zsh</span>
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">Hyprland / KDE</span>
+            <span class="px-2 py-1 rounded-full bg-obsidiana/60 border border-hierro">Dotfiles</span>
+          </div>
+          <div class="flex gap-3 text-xs text-fosforo">
+            <a href="#" class="hover:underline">Repositorio</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROYECTO 4 (placeholder) -->
+      <article class="bg-grafito/40 border border-dashed border-hierro/70 rounded-xl p-5 flex flex-col justify-center items-start">
+        <p class="text-acero text-sm">
+          Próximo proyecto Umbryne.  
+          <span class="text-fosforo">En desarrollo…</span>
+        </p>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="py-8 text-center text-acero text-sm border-t border-hierro bg-grafito/30">
+    © Umbryne Studio — 2025
+  </footer>
+
+</body>
+</html>
