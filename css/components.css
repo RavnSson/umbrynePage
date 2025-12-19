@@ -2,23 +2,21 @@
 header {
   position: sticky;
   top: 0;
-  background: rgba(10,11,12,.8);
-  backdrop-filter: blur(8px);
+  background: rgba(10,11,12,.85);
   border-bottom: 1px solid var(--border);
-  z-index: 10;
 }
 
 .header-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   height: 64px;
 }
 
 .brand {
   display: flex;
-  align-items: center;
   gap: .5rem;
+  align-items: center;
   font-weight: 700;
 }
 
@@ -44,7 +42,7 @@ nav a:hover {
 }
 
 .cta {
-  padding: .4rem .7rem;
+  padding: .35rem .7rem;
   border-radius: var(--radius);
   border: 1px solid var(--accent);
   color: var(--accent);
@@ -52,7 +50,6 @@ nav a:hover {
 
 /* Buttons */
 .btn {
-  display: inline-block;
   padding: .6rem 1rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
@@ -68,5 +65,18 @@ nav a:hover {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.2rem;
+  padding: 1.4rem;
+}
+
+/* Placeholder visual */
+.placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px dashed var(--border);
+  display: grid;
+  place-items: center;
+  font-size: .65rem;
+  color: rgba(197,200,198,.5);
+  margin-bottom: .8rem;
 }

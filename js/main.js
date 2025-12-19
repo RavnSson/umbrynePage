@@ -6,14 +6,13 @@ async function load(id, file) {
 
 load('header', 'header.html');
 load('hero', 'hero.html');
-load('servicios', 'services.html');
-load('proyectos', 'projects.html');
-load('acerca', 'about.html');
-load('contacto', 'contact.html');
+load('servicios', 'servicios.html');
+load('proyectos', 'proyectos.html');
+load('acerca', 'acerca.html');
+load('contacto', 'contacto.html');
 load('footer', 'footer.html');
 
 document.addEventListener('DOMContentLoaded', () => {
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 });
-

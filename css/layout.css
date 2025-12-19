@@ -1,6 +1,6 @@
 .container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: auto;
   padding: 0 1rem;
 }
 
@@ -10,7 +10,7 @@ section {
 
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .grid-3 {
@@ -18,5 +18,5 @@ section {
 }
 
 .grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }

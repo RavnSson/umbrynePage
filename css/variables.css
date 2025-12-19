@@ -6,13 +6,11 @@
 
   --accent: #00FF66;
   --accent-alt: #5E2B97;
-  --danger: #D92626;
-
-  --radius: 16px;
-  --radius-lg: 24px;
 
   --border: rgba(197,200,198,.12);
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+
+  --radius: 14px;
+  --radius-lg: 22px;
 
   --max-width: 1100px;
 }
