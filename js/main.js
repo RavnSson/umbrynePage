@@ -12,6 +12,8 @@ load('acerca', 'about.html');
 load('contacto', 'contact.html');
 load('footer', 'footer.html');
 
-// Año automático footer
-const year = document.getElementById('year');
-if (year) year.textContent = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', () => {
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+});
+

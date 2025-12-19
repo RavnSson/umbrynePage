@@ -1,0 +1,15 @@
+.hero {
+  padding-top: 3rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero p {
+  max-width: 60ch;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+}

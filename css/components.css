@@ -1,0 +1,72 @@
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(10,11,12,.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: var(--panel);
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+}
+
+/* Nav */
+nav a {
+  margin-left: 1rem;
+  font-size: .9rem;
+  opacity: .85;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+.cta {
+  padding: .4rem .7rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: .6rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.btn.primary {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Cards */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+}
