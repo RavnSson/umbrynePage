@@ -6,10 +6,10 @@ async function load(id, file) {
 
 load('header', 'header.html');
 load('hero', 'hero.html');
-load('servicios', 'servicios.html');
-load('proyectos', 'proyectos.html');
-load('acerca', 'acerca.html');
-load('contacto', 'contacto.html');
+load('servicios', 'services.html');
+load('proyectos', 'projects.html');
+load('acerca', 'about.html');
+load('contacto', 'contact.html');
 load('footer', 'footer.html');
 
 // Año automático footer
