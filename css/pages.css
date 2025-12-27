@@ -1,18 +1,55 @@
-.hero h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+.hero h1{
+  font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
 }
 
-.hero p {
+.hero p{
   max-width: 60ch;
+  font-size: 1.02rem;
+  color: rgba(197,200,198,.78);
 }
 
 .section-title {
   margin-bottom: 1.5rem;
 }
 
-.kicker {
-  font-size: .7rem;
-  letter-spacing: .25em;
+.kicker{
+  display:inline-block;
+  font-size: .72rem;
+  letter-spacing: .28em;
   text-transform: uppercase;
-  color: rgba(197,200,198,.5);
+  color: rgba(197,200,198,.55);
+  margin-bottom: .6rem;
+}
+
+.hero-panel{
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 1.8rem;
+  box-shadow: var(--shadow-md);
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin-top: 1.2rem;
+}
+
+.hero-meta{
+  display:flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1.2rem;
+}
+
+.chip{
+  font-size: .78rem;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(10,11,12,.25);
+  color: rgba(197,200,198,.75);
 }

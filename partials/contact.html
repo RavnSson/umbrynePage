@@ -2,9 +2,54 @@
   <span class="kicker">Entrada</span>
   <h2 class="section-title">Contacto</h2>
 
-  <p>¿Tienes una idea, proyecto o colaboración en mente?</p>
+  <div class="contact-wrap">
+    <div class="card contact-card">
+      <h3>Escríbeme</h3>
+      <p class="muted">
+        Si es colaboración, cuéntame objetivo, plazo y links relevantes. Respondo cuando tenga una primera lectura clara.
+      </p>
 
-  <a class="btn primary" href="mailto:tucorreo@dominio.com">
-    Escribir correo
-  </a>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required minlength="2">
+          <small class="help" data-help="name"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@mail.com" required>
+          <small class="help" data-help="email"></small>
+        </div>
+
+        <div class="field">
+          <label for="topic">Motivo</label>
+          <select id="topic" name="topic" required>
+            <option value="" selected disabled>Selecciona…</option>
+            <option value="Colaboración">Colaboración</option>
+            <option value="Proyecto / Encargo">Proyecto / Encargo</option>
+            <option value="Consulta técnica">Consulta técnica</option>
+            <option value="Otro">Otro</option>
+          </select>
+          <small class="help" data-help="topic"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje…" required minlength="10"></textarea>
+          <div class="row">
+            <small class="help" data-help="message"></small>
+            <small class="count" id="charCount">0/600</small>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn primary" type="submit">Generar correo</button>
+          <button class="btn" type="button" id="copyBtn">Copiar mensaje</button>
+        </div>
+
+        <div class="status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
 </div>

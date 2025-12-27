@@ -6,13 +6,28 @@ async function load(id, file) {
 
 load('header', 'header.html');
 load('hero', 'hero.html');
-load('servicios', 'servicios.html');
-load('proyectos', 'proyectos.html');
-load('acerca', 'acerca.html');
-load('contacto', 'contacto.html');
+load('services', 'services.html');
+load('projects', 'projects.html');
+load('about', 'about.html');
+load('contact', 'contact.html');
 load('footer', 'footer.html');
 
 document.addEventListener('DOMContentLoaded', () => {
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 });
+
+const menuBtn = document.getElementById('menuBtn');
+const mobilePanel = document.getElementById('mobilePanel');
+
+if (menuBtn && mobilePanel) {
+  menuBtn.addEventListener('click', () => {
+    mobilePanel.classList.toggle('show');
+  });
+
+  mobilePanel.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      mobilePanel.classList.remove('show');
+    }
+  });
+}
